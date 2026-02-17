@@ -1,43 +1,402 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Game Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Unblocked Games</title>
     <style>
-        body { background-color: #1a1a1a; color: white; font-family: sans-serif; text-align: center; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 50px; }
-        .game-card { background: #333; padding: 20px; border-radius: 10px; width: 200px; transition: transform 0.2s; }
-        .game-card:hover { transform: scale(1.05); background: #444; cursor: pointer; }
-        a { text-decoration: none; color: white; font-weight: bold; font-size: 1.2em; }
-        img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+        body { 
+            background-color: #121212; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        h1 { margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; }
+        .container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+            gap: 20px; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+        }
+        .game-card { 
+            background: #2c2c2c; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .game-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
+            background: #383838;
+        }
+        .game-card img { 
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; 
+            border-bottom: 2px solid #444; 
+        }
+        .game-title { 
+            padding: 15px; 
+            font-weight: bold; 
+            font-size: 1.1em; 
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>My Unblocked Games</h1>
+
+    <h1>🎮 My Game Library 🎮</h1>
+
     <div class="container">
-        <div class="game-card">
-            <a href="extensions/1v1 lol.html">
-                <img src="extensions/1v1 lol.png" alt="1v1 LOL">
-                <br>1v1.LOL
-            </a>
-        </div>
-        <div class="game-card">
-            <a href="extensions/2048.html">
-                <img src="extensions/2048.png" alt="2048">
-                <br>2048
-            </a>
-        </div>
-        <div class="game-card">
-            <a href="extensions/among us.html">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg" alt="Among Us">
-                <br>Among Us
-            </a>
-        </div>
-         <div class="game-card">
-            <a href="extensions/slope.html">
-                <img src="https://play-lh.googleusercontent.com/u4YQyM58852M_NMb_CWjJ-U_zM4C1UfT7wW_qJgM3v8Xz1zJ8_zM4C1UfT7wW_qJgM3v8Xz1zJ8" alt="Slope">
-                <br>Slope
-            </a>
-        </div>
+        <a href="extensions/1v1 lol.html" class="game-card">
+            <img src="extensions/1v1 lol.png" alt="1v1 LOL">
+            <div class="game-title">1v1.LOL</div>
+        </a>
+
+        <a href="extensions/2048.html" class="game-card">
+            <img src="extensions/2048.png" alt="2048">
+            <div class="game-title">2048</div>
+        </a>
+
+        <a href="extensions/among us.html" class="game-card">
+            <img src="extensions/among us.jpg" alt="Among Us">
+            <div class="game-title">Among Us</div>
+        </a>
+
+        <a href="extensions/backrooms.html" class="game-card">
+            <img src="extensions/backrooms.jpg" alt="Backrooms">
+            <div class="game-title">Backrooms</div>
+        </a>
+
+        <a href="extensions/basket random.html" class="game-card">
+            <img src="extensions/basket random.jpg" alt="Basket Random">
+            <div class="game-title">Basket Random</div>
+        </a>
+
+        <a href="extensions/basketball stars.html" class="game-card">
+            <img src="extensions/basketball stars.jpg" alt="Basketball Stars">
+            <div class="game-title">Basketball Stars</div>
+        </a>
+
+        <a href="extensions/basketbros.html" class="game-card">
+            <img src="extensions/basketbros.jpg" alt="BasketBros">
+            <div class="game-title">BasketBros</div>
+        </a>
+
+        <a href="extensions/bitlife.html" class="game-card">
+            <img src="extensions/bitlife.jpg" alt="BitLife">
+            <div class="game-title">BitLife</div>
+        </a>
+
+        <a href="extensions/bloomstd.html" class="game-card">
+            <img src="extensions/bloonstd.jpg" alt="Bloons TD">
+            <div class="game-title">Bloons TD</div>
+        </a>
+
+        <a href="extensions/boxing random.html" class="game-card">
+            <img src="extensions/boxing random.jpg" alt="Boxing Random">
+            <div class="game-title">Boxing Random</div>
+        </a>
+
+        <a href="extensions/cars.html" class="game-card">
+            <img src="extensions/car logo.jpg" alt="Cars">
+            <div class="game-title">Cars</div>
+        </a>
+
+        <a href="extensions/chrome dino.html" class="game-card">
+            <img src="extensions/chrome dino.png" alt="Chrome Dino">
+            <div class="game-title">Chrome Dino</div>
+        </a>
+
+        <a href="extensions/cookie clicker.html" class="game-card">
+            <img src="extensions/cookie.png" alt="Cookie Clicker">
+            <div class="game-title">Cookie Clicker</div>
+        </a>
+
+        <a href="extensions/crossy road.html" class="game-card">
+            <img src="extensions/crossy road.jpg" alt="Crossy Road">
+            <div class="game-title">Crossy Road</div>
+        </a>
+
+        <a href="extensions/csgo clicker.html" class="game-card">
+            <img src="extensions/csgo clicker.png" alt="CSGO Clicker">
+            <div class="game-title">CSGO Clicker</div>
+        </a>
+
+        <a href="extensions/deadshot.html" class="game-card">
+            <img src="extensions/deadshot.jpg" alt="Deadshot">
+            <div class="game-title">Deadshot</div>
+        </a>
+
+        <a href="extensions/death run3d.html" class="game-card">
+            <img src="extensions/death run3D.png" alt="Death Run 3D">
+            <div class="game-title">Death Run 3D</div>
+        </a>
+
+        <a href="extensions/draw the hill.html" class="game-card">
+            <img src="extensions/draw the hill.jpg" alt="Draw The Hill">
+            <div class="game-title">Draw The Hill</div>
+        </a>
+
+        <a href="extensions/drift boss.html" class="game-card">
+            <img src="extensions/drift boss.png" alt="Drift Boss">
+            <div class="game-title">Drift Boss</div>
+        </a>
+
+        <a href="extensions/drift io.html" class="game-card">
+            <img src="extensions/drift io.jpg" alt="Drift IO">
+            <div class="game-title">Drift IO</div>
+        </a>
+
+        <a href="extensions/drive mad.html" class="game-card">
+            <img src="extensions/drive mad.jpg" alt="Drive Mad">
+            <div class="game-title">Drive Mad</div>
+        </a>
+
+        <a href="extensions/eaglercraft.html" class="game-card">
+            <img src="extensions/eaglercraft.png" alt="Eaglercraft">
+            <div class="game-title">Eaglercraft</div>
+        </a>
+
+        <a href="extensions/eggy car.html" class="game-card">
+            <img src="extensions/eggy car.jpg" alt="Eggy Car">
+            <div class="game-title">Eggy Car</div>
+        </a>
+
+        <a href="extensions/ev io.html" class="game-card">
+            <img src="extensions/ev io.jpg" alt="EV.IO">
+            <div class="game-title">EV.IO</div>
+        </a>
+
+        <a href="extensions/flappy bird.html" class="game-card">
+            <img src="extensions/flappy bird.png" alt="Flappy Bird">
+            <div class="game-title">Flappy Bird</div>
+        </a>
+
+        <a href="extensions/fruit ninja.html" class="game-card">
+            <img src="extensions/Fruit Ninja.jpg" alt="Fruit Ninja">
+            <div class="game-title">Fruit Ninja</div>
+        </a>
+
+        <a href="extensions/gartic phone.html" class="game-card">
+            <img src="extensions/gartic phone.jpg" alt="Gartic Phone">
+            <div class="game-title">Gartic Phone</div>
+        </a>
+
+        <a href="extensions/geometry dash.html" class="game-card">
+            <img src="extensions/geometry dash.jpg" alt="Geometry Dash">
+            <div class="game-title">Geometry Dash</div>
+        </a>
+
+        <a href="extensions/idle breakout.html" class="game-card">
+            <img src="extensions/idle breakout.png" alt="Idle Breakout">
+            <div class="game-title">Idle Breakout</div>
+        </a>
+
+        <a href="extensions/infinite craft.html" class="game-card">
+            <img src="extensions/infintie craft.png" alt="Infinite Craft">
+            <div class="game-title">Infinite Craft</div>
+        </a>
+
+        <a href="extensions/jeff bazos.html" class="game-card">
+            <img src="extensions/JEFF BAZOS.png" alt="Jeff Bazos">
+            <div class="game-title">Jeff Bazos</div>
+        </a>
+
+        <a href="extensions/krunker.html" class="game-card">
+            <img src="extensions/krunker.png" alt="Krunker">
+            <div class="game-title">Krunker</div>
+        </a>
+
+        <a href="extensions/loshot.html" class="game-card">
+            <img src="extensions/lolshot.jpg" alt="Lolshot">
+            <div class="game-title">Lolshot</div>
+        </a>
+
+        <a href="extensions/madilin stuntcars.html" class="game-card">
+            <img src="extensions/madalin stuncars.jpg" alt="Madalin Cars">
+            <div class="game-title">Madalin Cars</div>
+        </a>
+
+        <a href="extensions/mario.html" class="game-card">
+            <img src="extensions/Mario.gif" alt="Mario">
+            <div class="game-title">Mario</div>
+        </a>
+        
+        <a href="extensions/mario 64.html" class="game-card">
+            <img src="extensions/super mario.png" alt="Mario 64">
+            <div class="game-title">Mario 64</div>
+        </a>
+
+        <a href="extensions/minecraft classic.html" class="game-card">
+            <img src="extensions/minecraft classic.png" alt="Minecraft">
+            <div class="game-title">Minecraft Classic</div>
+        </a>
+
+        <a href="extensions/monkey mart.html" class="game-card">
+            <img src="extensions/monkey mart.jpg" alt="Monkey Mart">
+            <div class="game-title">Monkey Mart</div>
+        </a>
+
+        <a href="extensions/neal.fun.html" class="game-card">
+            <img src="extensions/neal.fun.jpg" alt="Neal Fun">
+            <div class="game-title">Neal.Fun</div>
+        </a>
+
+        <a href="extensions/paper io.html" class="game-card">
+            <img src="extensions/paper io.png" alt="Paper IO">
+            <div class="game-title">Paper IO</div>
+        </a>
+
+        <a href="extensions/retro bowl.html" class="game-card">
+            <img src="extensions/retro bowl.jpg" alt="Retro Bowl">
+            <div class="game-title">Retro Bowl</div>
+        </a>
+
+        <a href="extensions/roblox.html" class="game-card">
+            <img src="extensions/roblox.jpg" alt="Roblox">
+            <div class="game-title">Roblox</div>
+        </a>
+
+        <a href="extensions/run3.html" class="game-card">
+            <img src="extensions/run3.jpg" alt="Run 3">
+            <div class="game-title">Run 3</div>
+        </a>
+
+        <a href="extensions/santa tracker.html" class="game-card">
+            <img src="extensions/santa tracker.png" alt="Santa Tracker">
+            <div class="game-title">Santa Tracker</div>
+        </a>
+
+        <a href="extensions/scrap metal3.html" class="game-card">
+            <img src="extensions/scrap metal 3.png" alt="Scrap Metal 3">
+            <div class="game-title">Scrap Metal 3</div>
+        </a>
+
+        <a href="extensions/shellshockers.html" class="game-card">
+            <img src="extensions/shellshockers.jpg" alt="Shell Shockers">
+            <div class="game-title">Shell Shockers</div>
+        </a>
+
+        <a href="extensions/shooter.html" class="game-card">
+            <img src="extensions/shooter logo.jpg" alt="Shooter">
+            <div class="game-title">Shooter</div>
+        </a>
+
+        <a href="extensions/short life.html" class="game-card">
+            <img src="extensions/short life.jpg" alt="Short Life">
+            <div class="game-title">Short Life</div>
+        </a>
+
+        <a href="extensions/slope.html" class="game-card">
+            <img src="extensions/slope.jpg" alt="Slope">
+            <div class="game-title">Slope</div>
+        </a>
+        
+        <a href="extensions/slope2.html" class="game-card">
+            <img src="extensions/slope2.png" alt="Slope 2">
+            <div class="game-title">Slope 2</div>
+        </a>
+
+        <a href="extensions/slow roads.html" class="game-card">
+            <img src="extensions/slow roads.jpg" alt="Slow Roads">
+            <div class="game-title">Slow Roads</div>
+        </a>
+
+        <a href="extensions/smash karts.html" class="game-card">
+            <img src="extensions/smash karts.jpg" alt="Smash Karts">
+            <div class="game-title">Smash Karts</div>
+        </a>
+
+        <a href="extensions/snake.html" class="game-card">
+            <img src="extensions/snake.jpg" alt="Snake">
+            <div class="game-title">Snake</div>
+        </a>
+
+        <a href="extensions/snow rider 3d.html" class="game-card">
+            <img src="extensions/snow rider 3D.jpg" alt="Snow Rider 3D">
+            <div class="game-title">Snow Rider 3D</div>
+        </a>
+
+        <a href="extensions/soccer random.html" class="game-card">
+            <img src="extensions/soccer random.jpg" alt="Soccer Random">
+            <div class="game-title">Soccer Random</div>
+        </a>
+
+        <a href="extensions/spidey swing.html" class="game-card">
+            <img src="extensions/spidey swing.jpg" alt="Spidey Swing">
+            <div class="game-title">Spidey Swing</div>
+        </a>
+
+        <a href="extensions/sports.html" class="game-card">
+            <img src="extensions/sports logo.jpg" alt="Sports">
+            <div class="game-title">Sports</div>
+        </a>
+
+        <a href="extensions/spotify.html" class="game-card">
+            <img src="extensions/spotify.png" alt="Spotify">
+            <div class="game-title">Spotify</div>
+        </a>
+
+        <a href="extensions/temple run2.html" class="game-card">
+            <img src="extensions/temple run2.png" alt="Temple Run 2">
+            <div class="game-title">Temple Run 2</div>
+        </a>
+
+        <a href="extensions/tube jumpers.html" class="game-card">
+            <img src="extensions/tube jumpers.jpg" alt="Tube Jumpers">
+            <div class="game-title">Tube Jumpers</div>
+        </a>
+
+        <a href="extensions/tunnel rush.html" class="game-card">
+            <img src="extensions/tunnel rush.jpg" alt="Tunnel Rush">
+            <div class="game-title">Tunnel Rush</div>
+        </a>
+
+        <a href="extensions/venge.io.html" class="game-card">
+            <img src="extensions/venge.jpg" alt="Venge.io">
+            <div class="game-title">Venge.io</div>
+        </a>
+
+        <a href="extensions/volly random.html" class="game-card">
+            <img src="extensions/volly random.jpg" alt="Volley Random">
+            <div class="game-title">Volley Random</div>
+        </a>
+
+        <a href="extensions/windows 11.html" class="game-card">
+            <img src="extensions/windows11.jpg" alt="Windows 11">
+            <div class="game-title">Windows 11</div>
+        </a>
+
+        <a href="extensions/wordle.html" class="game-card">
+            <img src="extensions/wordle.png" alt="Wordle">
+            <div class="game-title">Wordle</div>
+        </a>
+
+        <a href="extensions/worlds hardest game.html" class="game-card">
+            <img src="extensions/worlds hardest game.jpg" alt="Worlds Hardest Game">
+            <div class="game-title">Hardest Game 1</div>
+        </a>
+
+        <a href="extensions/worlds hardest game2.html" class="game-card">
+            <img src="extensions/worlds hardest game 2.jpg" alt="Worlds Hardest Game 2">
+            <div class="game-title">Hardest Game 2</div>
+        </a>
+
+        <a href="extensions/youtube.html" class="game-card">
+            <img src="extensions/youtube.png" alt="YouTube">
+            <div class="game-title">YouTube</div>
+        </a>
+
     </div>
 </body>
 </html>
