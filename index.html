@@ -1,58 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="logo.jpg" type="image">
-    <title>Alexx743 games</title>
+    <title>My Game Site</title>
+    <style>
+        body { background-color: #1a1a1a; color: white; font-family: sans-serif; text-align: center; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 50px; }
+        .game-card { background: #333; padding: 20px; border-radius: 10px; width: 200px; transition: transform 0.2s; }
+        .game-card:hover { transform: scale(1.05); background: #444; cursor: pointer; }
+        a { text-decoration: none; color: white; font-weight: bold; font-size: 1.2em; }
+        img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-
-    <h1> Alexx743 games</h1>
-
-    <div class="topnav">
-        <a href="games.html">
-        <button title="Games" id="Games" class="divbutton"> Games </button> 
-      </a> 
-    
-        <a href="Apps.html">
-        <button title="Apps" id="Apps" class="divbutton"> Apps</button>
-        </a>
-    
-      <a href="index.html">
-        <button title="home" id="home" class="divbutton">home</button>
-      </a>
-
-        <button title="about:blank" onclick="launchab()" id="about:blank" 
-        class="about-blank">about:blank</button>
-     
-      </div>
-
-      <p class="p">Credits to 3kh0</p>
-      <p class="p">credits to damifidy 
-        for helping with some of the code and the proxy
-      </p>
-
-      <script
-        function launchab() {
-        const tab = window.open('about:blank', '_blank');
-        const iframe = tab.document.createElement('iframe');
-        const stl = iframe.style;
-        stl.border = stl.outline = 'none';
-        stl.width = '100vw';
-        stl.height = '100vh';
-        stl.position = 'fixed';
-        stl.left = stl.right = stl.top = stl.bottom = '0';
-        iframe.src = self.location;
-        tab.document.body.appendChild(iframe);
-        window.parent.window.location.replace('https://google.com/');
-      src="script.js"> </script>
-        }
-
-        <script>
-          document.addEventListener("keydown", 
-          async (e) => { if ("`" == e.key) window.parent.window.location.replace("https://google.com/") });
-        </script>
-        
-    
+    <h1>My Unblocked Games</h1>
+    <div class="container">
+        <div class="game-card">
+            <a href="extensions/1v1 lol.html">
+                <img src="extensions/1v1 lol.png" alt="1v1 LOL">
+                <br>1v1.LOL
+            </a>
+        </div>
+        <div class="game-card">
+            <a href="extensions/2048.html">
+                <img src="extensions/2048.png" alt="2048">
+                <br>2048
+            </a>
+        </div>
+        <div class="game-card">
+            <a href="extensions/among us.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg" alt="Among Us">
+                <br>Among Us
+            </a>
+        </div>
+         <div class="game-card">
+            <a href="extensions/slope.html">
+                <img src="https://play-lh.googleusercontent.com/u4YQyM58852M_NMb_CWjJ-U_zM4C1UfT7wW_qJgM3v8Xz1zJ8_zM4C1UfT7wW_qJgM3v8Xz1zJ8" alt="Slope">
+                <br>Slope
+            </a>
+        </div>
+    </div>
+</body>
+</html>
